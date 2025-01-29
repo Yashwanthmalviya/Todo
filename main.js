@@ -66,7 +66,7 @@ function add() {
   todoList.push({
     task: value,
     id: Date.now().toString(),
-    complete: false,
+    complete: false,  //initially its set to false untill its completed
   });
 
   todoInput.value = "";
@@ -152,7 +152,7 @@ function deleteS(todo) {
 
 // functions for filters
 function viewCompleted() {
-  addinmain(comdoList);
+  addinmain(comdoList);  
 }
 
 function viewRemaining() {
